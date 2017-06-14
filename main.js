@@ -7,19 +7,6 @@
 
   // Your Code Goes Here
 
-  // function Customer(firstName, lastName, email, addressOne, addressTwo, phone, photo){
-  //   this.name = firstName + ' ' + lastName;
-  //   this.email = email;
-  //   this.addressOne = addressOne;
-  //   this.addressTwo = addressTwo;
-  //   this.phone = phone;
-  //   this.photo = photo;
-  // }
-  //
-  // function createNarrowed(){
-  //
-  // }
-
 function buildProfile(customerData){
   for (var i = 0; i < customerData.results.length; i++) {
     var customerInstance = customerData.results[i];
@@ -51,24 +38,7 @@ function buildProfile(customerData){
     var phone = document.createElement('p');
     phone.textContent = customerInstance.cell;
     info.appendChild(phone);
-
-
-      // this.name.first,
-      // this.name.last,
-      // this.email,
-      // this.location.street,
-      // (this.location.city + ' ' + this.location.state + ' ' + this.location.postcode),
-      // this.cell)
-
   }
-
-  // customerData.results.foreach(new Customer(
-  //   this.name.first,
-  //   this.name.last,
-  //   this.email,
-  //   this.location.street,
-  //   (this.location.city + ' ' + this.location.state + ' ' + this.location.postcode),
-  //   this.cell))
 }
 
   $.ajax({
